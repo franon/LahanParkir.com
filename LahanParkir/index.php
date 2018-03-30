@@ -1,3 +1,6 @@
+<?php
+  $inIndex = "goToId";
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
