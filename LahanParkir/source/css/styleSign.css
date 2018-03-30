@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "raleway";
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+body {
+  min-height: 100vh;
+  background: #E8CBC0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "raleway";
+}
+a:hover {
+  text-decoration: none;
+}
+a, .sign-form {
+  color: #4c6ece;
+}
+span {
+  display: inline-block;
+}
+.sign-form {
+  position: absolute;
+  min-height: 80vh;
+  width: 70vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 10vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.show-password label, #show-password {
+  cursor: pointer;
+}
+input#show-password {
+    margin-top: 2vh;
+}
+.sign-logo .col-md-3 {
+  padding: 0 2vw;
+}
+small {
+  display: block;
+}
+form#signin {
+  padding-top: 15vh;
+}

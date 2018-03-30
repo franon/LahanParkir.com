@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+div, nav, body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+nav.nav {
+  position: fixed;
+  width: 100%;
+  height: 14vh;
+  margin: 0;
+  padding: 0.5vh;
+  z-index: 1;
+  transition: all 0.2s linear;
+  background-color: rgb(109, 214, 208);
+}
+nav.nav .logo span {
+  padding-left: 2vw;
+}
+.nav a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s linear;
+}
+.nav a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.nav-menu span {
+  font-size: 3vh;
+  display: inline-block;
+  margin: 2vh;
+}
+.nav-menu {
+  position: absolute;
+  right: 2vw;
+  z-index: 1;
+}
+.fa-bars {
+  color: #fff;
+}

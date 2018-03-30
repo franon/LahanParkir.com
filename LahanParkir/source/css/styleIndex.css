@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+div, nav, body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+#home {
+  min-height: 120vh;
+  background-color: #154A8E;
+  background: #50C9C3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: url("../img/Aqualicious.jpg"); */
+  background-size: cover;
+  color: #fff;
+}
+#home .shape {
+  height: 120vh;
+  width: 100%;
+  background-image: url("../img/shape.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#home .slogan {
+  position: absolute;
+  margin: auto;
+  width: 75vw;
+  top: 20vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#home .slogan p {
+  font-size: 1.8em;
+}
+input.search {
+  width: 70%;
+  font-size: 1.5em;
+  display: inline-block;
+}
+input.form-control.btn.btn-primary {
+    width: 20%;
+    margin-bottom: 1.5vh;
+    font-size: 1.5em;
+}
+.slogan p:last-child {
+  padding-left: 5vw;
+}
+#cara-penggunaan {
+  min-height: 100vh;
+  background-color: #F9FCFE;
+  padding-top: 8.5vw;
+}
+#cara-penggunaan h2 {
+  padding-bottom: 3vw;;
+}
+#cara-penggunaan div {
+  margin: 0;
+}
+#cara-penggunaan span {
+  display: inline-block;
+  background-color: #50C9C380;
+  padding: 0.4vw 1vw;
+  border-radius: 50%;
+  font-weight: bold;
+}
+#cara-penggunaan .row .col-md-4 {
+  padding: 0 5vw;
+}
+.satutiga {
+  margin: 5vw 0;
+}
+#tentang {
+  min-height: 100vh;
+  padding: 7vw;
+  background: rgb(255, 251, 251);
+  padding-top: 10vw;
+}
+#tentang .container {
+  background-color: #fff;
+  border-radius: 2vw;
+  padding: 3vw;
+}
+#tentang .container p {
+  line-height: 8vh;
+}
+#kontak {
+  padding: 5vw;
+  padding-top: 10vw;
+  min-height: 100vh;
+  background: #DAD299;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#formkontak {
+  padding-top: 5vh;
+}
+#formkontak input, #formkontak textarea {
+  font-size: 1.2em;
+}
+#formkontak input {
+  padding: 1vw;
+  width: 100%;
+  margin: 1vw;
+}
+#formkontak textarea {
+  margin: 1vw;
+  padding: 1vw;
+}
+#formkontak .btn.btn-primary {
+  width: 10vw;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+}
+#kontak small {
+  font-size: 1.2em;
+}
+#footer {
+  background-color: rgba(29, 33, 36, 0.98);
+  color: #fff;
+  height: 17vh;
+  position: relative;
+  margin: 0 auto;
+  line-height: 17vh;
+}
+#footer p {
+  margin: 0;
+}
+@media only screen and (max-width: 991px) {
+    .nav-menu {
+      position: static;
+      background-color: rgb(109, 214, 208);
+      z-index: 2;
+    }
+    .nav a {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .nav a:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .nav-menu {
+        position: absolute;
+    }
+}
