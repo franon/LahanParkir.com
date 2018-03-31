@@ -6,6 +6,9 @@
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf");
 }
+label {
+  cursor: pointer;
+}
 body {
   min-height: 100vh;
   background: #E8CBC0;  /* fallback for old browsers */
@@ -31,6 +34,7 @@ span {
   right: 0;
   left: 0;
   margin: auto;
+  padding: 5vw;
 }
 .show-password label, #show-password {
   cursor: pointer;

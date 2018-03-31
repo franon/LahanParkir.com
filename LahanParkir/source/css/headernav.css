@@ -40,3 +40,22 @@ nav.nav .logo span {
 .fa-bars {
   color: #fff;
 }
+
+@media only screen and (max-width: 991px) {
+    div#navtoggle {
+      position: static;
+      background-color: rgb(109, 214, 208);
+      z-index: 2;
+    }
+    .nav a {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .nav a:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .nav-menu {
+        position: absolute;
+    }
+}

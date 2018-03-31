@@ -1,0 +1,60 @@
+body {
+  /* color: #fff; */
+}
+span {
+  display: inline-block;
+}
+label, input[type="checkbox"] {
+  cursor: pointer;
+}
+.container-booking {
+    position: absolute;
+    min-height: 80vh;
+    width: 70vw;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 5vw;
+}
+.head-booking .row .col-md-3 span:first-child {
+  display: block;
+}
+.head-booking .row .col-md-3 span {
+  cursor: pointer;
+}
+.head-booking {
+  /* border-bottom: 2px solid #ddd; */
+}
+.head-booking .row .col-md-3 {
+  /* margin-bottom: 5vh; */
+}
+span.circle {
+  /* height: 4vw;
+  width: 4vw;
+  background-color: rgba(58, 202, 202, 0.64);
+  border-radius: 50%; */
+}
+.circle .color-circle {
+  font-size: 2em;
+  color: rgba(58, 202, 202, 0.64);
+}
+.circle .fa-check-circle {
+  /* display: none; */
+}
+.circle .fa-circle {
+  display: none;
+}
+
+/* FORM-nya */
+#formbooking {
+  margin-top: 5vh;
+}
+.form-group .form-check-input {
+  margin-left: 0;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+.form-group .form-check-label {
+  margin-left: 2vw;
+}
