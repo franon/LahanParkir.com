@@ -40,6 +40,37 @@ nav.nav .logo span {
 .fa-bars {
   color: #fff;
 }
+/* new dp user */
+span.notif {
+    margin-top: 1.8vh;
+    font-size: 1.7em;
+}
+span.dp {
+  margin: 0;
+}
+img.img-fluid.dp-user {
+  height: 7vh;
+  border-radius: 50%;
+}
+.profile-settings-logout {
+    position: absolute;
+    right: -1.8vw;
+    top: 11vh;
+    background-color: rgba(72, 203, 203, 0.66);
+    display: none;
+}
+a.nav-link.nav-dp {
+    padding: 0;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+/* lahan */
+.lahan-saya {
+  position: absolute;
+  background-color: rgba(72, 203, 203, 0.66);
+  display: none;
+}
+
 
 @media only screen and (max-width: 991px) {
     div#navtoggle {
@@ -54,6 +85,22 @@ nav.nav .logo span {
       color: rgba(255, 255, 255, 1);
     }
 }
+@media only screen and (max-width: 973px) {
+  .lahan-saya {
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+  .profile-settings-logout {
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    
+  }
+}
+
 @media only screen and (min-width: 992px) {
     .nav-menu {
         position: absolute;

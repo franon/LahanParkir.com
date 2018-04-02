@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if (isset($_POST['lanjut-ke-konfirmasi'])) {
+    $_SESSION['booking'][0] = $_POST['isiDataKendaraan'];
+  } else if(isset($_POST['uploadbukti'])) {
+    $_SESSION['booking'][1] = $_POST['uploadbukti'];
+  }
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -14,29 +22,22 @@
     <div class="container-booking">
       <div class="head-booking text-center">
         <div class="row">
-          <div class="col-md-3 isi_data_kendaraan">
+          <div class="col-md-4 isi_data_kendaraan">
             <span><strong>Isi Data Kendaraan</strong></span>
             <span class="circle" id="isi_data_kendaraan">
               <i class="fas fa-circle color-circle"></i>
               <i class="fas fa-check-circle color-circle"></i>
             </span>
           </div>
-          <div class="col-md-3 rincian_pemesanan">
-            <span><strong>Rincian Pemesanan</strong></span>
-            <span class="circle" id="rincian_pemesanan">
-              <i class="fas fa-circle color-circle"></i>
-              <i class="fas fa-check-circle color-circle"></i>
-            </span>
-          </div>
-          <div class="col-md-3 konfirmasi_pembayaran">
+          <div class="col-md-4 konfirmasi_pembayaran">
             <span><strong>Konfirmasi Pembayaran</strong></span>
             <span class="circle" id="konfirmasi_pembayaran">
               <i class="fas fa-circle color-circle"></i>
               <i class="fas fa-check-circle color-circle"></i>
             </span>
           </div>
-          <div class="col-md-3 proses_pembayaran">
-            <span><strong>Proses Pembayaran</strong></span>
+          <div class="col-md-4 proses_pembayaran">
+            <span><strong>Pembayaran Selesai</strong></span>
             <span class="circle" id="proses_pembayaran">
               <i class="fas fa-circle color-circle"></i>
               <i class="fas fa-check-circle color-circle"></i>
@@ -44,6 +45,41 @@
           </div>
         </div>
       </div>
+      <?php
+       if(isset($_SESSION['booking'][1])) {
+         ?>
+         <br><br>
+         <h2 class="text-center">Pembayaran Selesai</h2><br>
+         <p class="text-center">Selamat Anda sudah menyelesaikan proses pembayaran.
+         Sekarang anda sudah dapat memarkir kendaraan Anda, terimakasi telah menggunakan layanan kami :) </p>
+         <?php
+      } else if(isset($_SESSION['booking'][0])) {
+        ?>
+        <form id="formbooking" action="" method="post" enctype="multipart/form-data">
+          <h2 class="text-center">Menunggu Pembayaran</h2>
+          <div class="container-rincian-pemesanan text-center">
+            <p>Mohon selesaikan pembayaran Anda sebelum tanggal 24 Juli 2018 19.49 WIB dengan kode pembayaran sebagai berikut.</p>
+            <hr>
+            <p class="h3"><strong>Kode Pembayaran</strong></p>
+            <p class="h3"><strong>14045</strong></p>
+            <hr>
+            <p class="h4">Jumlah yang harus dibayar</p>
+            <p class="h3">Rp.50.000</p>
+            <p>Kode pembayaran akan <strong>otomatis</strong> dibatalkan apabila Anda belum melakukan pembayaran lebih dari 1 hari setelah <strong>Kode Pembayaran</strong> diberikan</p>
+          </div>
+          <br>
+          <div class="form-group">
+            <input class="form-control-file" type="file" name="pic" accept="image/*" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">Mohon Upload bukti pembayaran pada Form Upload di Atas</small>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="uploadbukti" value="Upload Bukti Pembayaran" class="btn btn-primary">
+          </div>
+
+        </form>
+        <?php
+      } else {
+      ?>
       <form id="formbooking" action="" method="post">
         <div class="form-group">
           <label for="date">Pilih Tanggal Parkir-nya</label>
@@ -73,10 +109,12 @@
           <input type="checkbox" class="form-check-input" id="eula" name="eula" value="fix">
           <label class="form-check-label" for="eula">Dengan ini saya telah membaca dan menyetujui Syarat dan Ketentuan serta Kebijakan</label>
         </div>
+        <input type="hidden" name="isiDataKendaraan" value="sudah">
         <div class="form-group text-center ">
-          <input type="button" name="btn-lanjutkan" class="btn btn-primary" value="Lanjutkan Pemesanan">
+          <input type="submit" name="lanjut-ke-konfirmasi" class="btn btn-primary" value="Lanjutkan Pemesanan">
         </div>
       </form>
+    <?php } ?>
     </div>
     <!-- datepicker dan Form-->
     <script src="source/js/jquery-3.3.1.min.js"></script>

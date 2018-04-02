@@ -2,23 +2,29 @@ div, nav {
   margin: 0 !important;
 }
 .maps-container {
-  position: relative;
+  position: relative; /*Diganti*/
   background-color: rgba(101, 191, 175, 0.5);
   width: 100%;
   min-height: 100vh;
   height: 100vh;
-  padding-top: 14vh;
+  padding-top: 14vh; /*Diganti*/
 }
-.maps-container img {
+/* .maps-container img {
   width: 100%;
   height: 100%;
+} */
+div#map {
+    height: 100%;
+}
+div#infowindow-content {
+  display: none;
 }
 .cari-container {
   padding-top: 15vh;
   z-index: 1;
   position: absolute;
-  left: 55%;
-  top: 20vh;
+  left: 55%; /*Diganti*/
+  top: 20vh; /*Diganti*/
   transform: translate(-50%,-50%);
   width: 70vw;
 }

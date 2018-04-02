@@ -51,3 +51,19 @@ small {
 form#signin {
   padding-top: 15vh;
 }
+
+/* pesan error */
+.pesan_error {
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(186, 249, 249, 0.83);
+    padding: 2vw;
+    font-size: 1.4em;
+    width: 50vw;
+    margin: auto;
+    font-weight: bold;
+    border: 2px solid rgba(189, 108, 108, 0.55);
+    left: 0;
+    right: 0;
+}

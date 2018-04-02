@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+body {
+  font-family: "roboto";
+  background: #536976;
+  background: -webkit-linear-gradient(to right, #292E49, #536976);
+  background: linear-gradient(to right, #292E49, #536976);
+  color: #f4fdffe6;
+}
+.dp img.dp-in-profil {
+  padding: 3vw;
+  padding-bottom: 1vh;
+}
+.padding-dikit {
+  padding: 20vh 5vw;
+  margin: 0;
+}
+.kanan {
+  border-left: 2px solid #ddd;
+  /* border-left: 2px solid #9cccbf; */
+}
+.kanan span {
+  display: inline-block;
+  cursor: pointer;
+}
+.kanan span:hover {
+  color: #fff;
+}
+.kanan span.border-bottom {
+  border-bottom: 2px solid #ddd !important;
+  /* border-bottom: 2px solid #9cccbf !important; */
+}
+.info-kontak {
+  padding: 5vw;
+  min-height: 52vh;
+  background-color: #0003;
+  box-shadow: 1px 1px 5px #000, 1px 1px 5px #000inherit;
+  margin-top: 3vh;
+}
+.info-kontak span {
+  width: 8vw;
+}
+.kirim-pesan {
+  display: none;
+  min-height: 70vh;
+  background-color: slategrey;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  background-image: url("../img/chatBackground.jpg");
+}
+.container-kirpes {
+}
+.window-kirpes {
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+.top-kirpes {
+  min-height: 8vh;
+  background-color: beige;
+}
+.bottom-kirpes {
+  position: absolute;
+  bottom: 0vh;
+  min-height: 8vh;
+  background-color: beige;
+  width: 100%;
+}
+.img-fluid.dp-in-profil-chat {
+    height: 7vh;
+    border-radius: 50%;
+    margin: 0.5vh;
+    margin-left: 1vh;
+}
+#text-send {
+    width: 80%;
+    margin-top: 2vh;
+    margin-left: 1.5%;
+    display: inline-block;
+}
+.btn-send {
+  width: 17%;
+}
+.p-window {
+    margin: 1vw;
+}
+.p-window span {
+  background-color: rgba(53, 48, 48, 0.68);
+  border-radius: 1vw;
+  padding: 0.5vw;
+}
+.fa-comment.right {
+  transform: rotateY(180deg);
+}
+/* pengaturan */
+.pengaturan {
+  display: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.container-pengaturan {
+  min-height: 65vh;
+  background-color: #f0f0f0;
+  padding: 2vw;
+}
+.container-pengaturan span:hover {
+  color: #000;
+}
+.pengaturan span strong {
+  display: inline-block;
+  min-width: 10vw;
+}
+.full_nameEdit, .alamat_Edit, .email_Edit, .nohp_Edit, .password_Edit {
+  display: none;
+}
+/* pesan-settings */
+.pesan {
+  position: fixed;
+  padding: 2vw;
+  background-color: #181933;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 10vw;
+  z-index: 1;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  display: none;
+}

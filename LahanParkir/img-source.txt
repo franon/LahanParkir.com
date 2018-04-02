@@ -1,3 +1,5 @@
 https://uigradients.com/#Aqualicious -> Aqualicious.jpg
 https://uigradients.com/#Autumn -> Autumn.jpg
 http://www.abcpaints.it/images/shape_on_thumb.png -> shape.png
+https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png -> dp_dummy.png
+https://image.freepik.com/free-photo/smooth-stucco-wall_1194-7087.jpg -> chatBackground.jpg

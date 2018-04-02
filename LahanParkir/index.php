@@ -1,4 +1,5 @@
 <?php
+  session_start();
   $inIndex = "goToId";
  ?>
 <!DOCTYPE html>
@@ -62,7 +63,7 @@
     <div id="tentang">
       <h2 class="text-center"><strong>Tentang LahanParkir.com</strong></h2><br>
       <div class="container">
-        <p class="h4">LahanParkir.com adalah sebuah website yang menyediakan solusi terbaik untuk mencari lahan parkir di sekitar rumah Anda jika Anda kesulitan untuk memarkir mobil Anda. LahanParkir.com akan mencari jalan keluar untuk permasalahan di atas dengan mudah dan efisien.</p>
+        <p class="h4">LahanParkir.com adalah sebuah website yang menyediakan solusi terbaik untuk mencari lahan parkir di sekitar rumah Anda jika Anda kesulitan untuk memarkir mobil Anda. Batas waktu penitipan mobil dapat Anda tentukan sendiri dalam kisaran waktu perbulan. LahanParkir.com akan mencari jalan keluar untuk permasalahan di atas dengan mudah dan efisien.</p>
       </div>
     </div>
     <div id="kontak">
